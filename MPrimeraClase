@@ -1,0 +1,55 @@
+class Main {
+    public static void main(String[] args) throws Exception {
+        Mesa mesa = new Mesa("rojo", "madera", 22, false);
+        System.out.println(mesa.getColor());
+        System.out.println(mesa.getMaterial());
+        System.out.println(mesa.getFrmaTableroHorizontal());
+        System.out.println(mesa.getCantidadPatas());
+    }
+}
+
+class Mesa {
+  private String color;
+  private String material;
+  private Boolean formaTableroHorizontal;
+  private Integer cantidadPatas;
+
+  public String getColor(){
+    return this.color;
+  }
+
+  public void setColor(String Value){
+    this.color = Value;
+  }
+  
+  public String getMaterial(){
+    return this.material;
+  }
+
+  public void setMaterial(String Value){
+    this.material = Value;
+  }
+
+  public Boolean getFrmaTableroHorizontal(){
+    return this.formaTableroHorizontal;
+  }
+
+  public void setFrmaTableroHorizontal(Boolean Value){
+    this.formaTableroHorizontal = Value;
+  }
+
+    public Integer getCantidadPatas(){
+    return this.cantidadPatas;
+  }
+
+  public void setCantidadPatas(Integer Value){
+    this.cantidadPatas = Value;
+  }
+
+  public Mesa (String color, String material, Integer cantidadPatas, Boolean formaTableroHorizontal) {
+    this.color = color;
+    this.material = material;
+    this.cantidadPatas = cantidadPatas;
+    this.formaTableroHorizontal = formaTableroHorizontal;
+  }
+}
